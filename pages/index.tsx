@@ -3,6 +3,7 @@ import { Box, Flex, HStack, VStack, Image, Heading } from '@chakra-ui/react';
 import React from 'react';
 import InstallLink from '../components/InstallLink';
 import { Carousel } from 'react-responsive-carousel';
+import Head from 'next/head';
 
 const CAROUSEL_IMAGE_HEIGHT = '80vh';
 const CAROUSEL_IMAGES = [
@@ -23,6 +24,9 @@ const CAROUSEL_IMAGES = [
 const Home: NextPage = () => {
   return (
     <>
+      <Head>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+      </Head>
       <VStack h='100vh'>
         <HStack
           w='100%'
