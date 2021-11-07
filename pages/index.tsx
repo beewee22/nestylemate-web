@@ -23,23 +23,27 @@ const Home: NextPage = () => {
           </Flex>
         </HStack>
 
-        <Carousel showThumbs={false}>
-          <Box>
-            <Image src='assets/appIntro_01.jpg' alt='' />
-          </Box>
-          <Box>
-            <Image src='assets/appIntro_02.jpg' alt='' />
-          </Box>
-          <Box>
-            <Image src='assets/appIntro_03.jpg' alt='' />
-          </Box>
-          <Box>
-            <Image src='assets/appIntro_04.jpg' alt='' />
-          </Box>
-          <Box>
-            <Image src='assets/appIntro_05.jpg' alt='' />
-          </Box>
-        </Carousel>
+        <Flex position='relative' padding={['0', '4% 24%']}>
+          <Flex width={['full', 'sm']} position={['relative', 'absolute']}>
+            <Carousel showThumbs={false} autoPlay={true} infiniteLoop={true} showStatus={false}>
+              <Box heigh={'70vh'}>
+                <Image src='assets/appIntro_01.jpg' alt='' />
+              </Box>
+              <Box heigh={'70vh'}>
+                <Image src='assets/appIntro_02.jpg' alt='' />
+              </Box>
+              <Box heigh={'70vh'}>
+                <Image src='assets/appIntro_03.jpg' alt='' />
+              </Box>
+              <Box heigh={'70vh'}>
+                <Image src='assets/appIntro_04.jpg' alt='' />
+              </Box>
+              <Box heigh={'70vh'}>
+                <Image src='assets/appIntro_05.jpg' alt='' />
+              </Box>
+            </Carousel>
+          </Flex>
+        </Flex>
       </VStack>
     </>
   );
